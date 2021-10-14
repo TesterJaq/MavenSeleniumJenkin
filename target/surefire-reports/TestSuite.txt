@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 59.63 sec <<< FAILURE! - in TestSuite
+openBrowser(com.jenkin.SwagLabs)  Time elapsed: 2.756 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: java/sql/Time
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:433)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at org.apache.maven.surefire.booter.IsolatedClassLoader.loadClass(IsolatedClassLoader.java:97)
+	at com.google.gson.Gson.<init>(Gson.java:265)
+	at com.google.gson.GsonBuilder.create(GsonBuilder.java:597)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:1333)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:95)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1161)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1009)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:927)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:337)
+	at com.jenkin.SwagLabs.openBrowser(SwagLabs.java:33)
+
